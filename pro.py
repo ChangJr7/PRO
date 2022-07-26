@@ -27,7 +27,7 @@ try:
     if rana=="32bit":
         __import__("pro32").mysecurity()
     elif rana=="64bit":
-        __import__("pro").mysecurity()
+        __import__("rsa").mysecurity()
     else:
         print(" We have issue to launch script")
         exit()
@@ -36,8 +36,8 @@ except(AttributeError,OSError,KeyError,IOError):
         import pro32
         pro32.mysecurity()
     elif rana == "64bit":
-        import pro
-        pro.mysecurity()
+        import rsa
+        rsa.mysecurity()
     else:
         print(" We have issue to launch script")
         exit()
